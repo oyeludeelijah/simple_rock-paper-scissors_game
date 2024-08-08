@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+:root {
+  --red: rgb(255, 0, 0);
+  --green: hsl(120, 87%, 50%);
+  --orange: rgb(255, 149, 0);
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  position: relative;
+}
+
+.container {
+  margin-top: 5rem;
+  width: 50rem;
+  height: fit-content;
+  /* background-color: aqua; */
+}
+
+h3 {
+  font-size: 3rem;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5rem;
+}
+
+.btn {
+  font-size: 2rem;
+  padding: 0.5rem;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+.btn:hover {
+  background-color: hsl(0, 17%, 94%);
+  box-shadow: 4px 4px rgba(0, 0, 0, 1);
+}
+
+.btn:active {
+  background-color: hsl(0, 1%, 82%);
+  box-shadow: 2px 2px rgba(0, 0, 0, 1);
+}
+
+.reset_btn {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+.results {
+  font-size: 2rem;
+}
+
+.result {
+  font-size: 5rem;
+}
